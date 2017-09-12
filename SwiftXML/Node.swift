@@ -6,15 +6,15 @@ extension XML {
         
         internal(set) weak var parent: Node?
         
-        internal(set) var children = [Node]()
+        public var children = [Node]()
         
-        var name: String
-        var namespaceURI: String?
-        var namespacePrefix: String?
-        var qualifiedName: String?
-        var content: String?
+        public var name: String
+        public var namespaceURI: String?
+        public var namespacePrefix: String?
+        public var qualifiedName: String?
+        public var content: String?
         
-        var attributes: [String : String]
+        public var attributes: [String : String]
         
         public init(name: String,
                     value: String? = nil,
@@ -24,8 +24,8 @@ extension XML {
             self.attributes = attributes
         }
         
-        subscript(key: String) -> Node {
-            return children.first(where: { $0.name == key })!
+        public subscript(key: String) -> Node? {
+            return children.first(where: { $0.name == key })
         }
         
         @discardableResult func addChild(_ child: Node) -> Node {

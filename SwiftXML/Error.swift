@@ -8,6 +8,7 @@ extension XML {
         case rootElementMissing
         
         case parsingFailed
+        
     }
 
 }

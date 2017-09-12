@@ -4,7 +4,7 @@ open class XML {
     
     open class Document {
         
-        var document: XMLDocument!
+        public var document: XMLDocument!
         
         // Open with a url
         public init(url: String) throws {
@@ -33,7 +33,7 @@ open class XML {
     
     public class XMLDocument: Node {
         
-        var root: Node {
+       public var root: Node {
             return children.first!
         }
         
