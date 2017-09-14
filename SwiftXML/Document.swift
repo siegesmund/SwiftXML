@@ -4,7 +4,11 @@ open class XML {
     
     open class Document {
         
-        public var document: XMLDocument!
+        public var document: XMLDocument?
+        
+        public var root: Node? {
+            return document?.children.first
+        }
         
         // Open with a url
         public init(url: String) throws {
@@ -30,14 +34,13 @@ open class XML {
         }
     }
     
-    
     public class XMLDocument: Node {
         
-       public var root: Node {
+       internal var root: Node {
             return children.first!
         }
         
-        public init(root: Node? = nil) {
+        internal init(root: Node? = nil) {
             
             let documentName = String(describing: XMLDocument.self)
             super.init(name: documentName)
@@ -51,7 +54,7 @@ open class XML {
             }
         }
         
-        public convenience init(xml: Data) throws {
+        internal convenience init(xml: Data) throws {
             self.init()
             try loadXML(xml)
         }
