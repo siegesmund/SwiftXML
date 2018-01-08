@@ -34,7 +34,7 @@ open class XML {
         }
     }
     
-    public class XMLDocument: Node {
+    open class XMLDocument: Node {
         
        internal var root: Node {
             return children.first!

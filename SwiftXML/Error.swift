@@ -1,7 +1,7 @@
 extension XML {
     
     // Error handling
-    public enum XMLError: Error {
+    open enum XMLError: Error {
         
         case elementNotFound
         
