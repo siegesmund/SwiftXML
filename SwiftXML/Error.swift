@@ -1,7 +1,7 @@
 extension XML {
     
     // Error handling
-    open enum XMLError: Error {
+    enum XMLError: Error {
         
         case elementNotFound
         
