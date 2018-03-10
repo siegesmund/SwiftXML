@@ -27,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01AECAB20041C2A00A659EA /* SwiftXML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftXML; sourceTree = "<group>"; };
+		D0689B1F20484BCC00078181 /* SwiftEdgar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftEdgar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D7B6AA1F683C24008F273A /* SwiftXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D7B6AD1F683C24008F273A /* SwiftXML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftXML.h; sourceTree = "<group>"; };
 		D0D7B6AE1F683C24008F273A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,12 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01AECAA20041C2A00A659EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0689B1F20484BCC00078181 /* SwiftEdgar.framework */,
+				D01AECAB20041C2A00A659EA /* SwiftXML */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0D7B6A01F683C24008F273A = {
 			isa = PBXGroup;
 			children = (
 				D0D7B6AC1F683C24008F273A /* SwiftXML */,
 				D0D7B6B71F683C24008F273A /* SwiftXMLTests */,
 				D0D7B6AB1F683C24008F273A /* Products */,
+				D01AECAA20041C2A00A659EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
